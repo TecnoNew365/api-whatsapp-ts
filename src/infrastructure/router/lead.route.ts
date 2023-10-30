@@ -7,6 +7,6 @@ const router: Router = Router();
  * http://localhost/lead POST
  */
 const leadCtrl: LeadCtrl = container.get("lead.ctrl");
-router.post("/notification/", leadCtrl.sendCtrl);
+router.post("/", leadCtrl.sendCtrl);
 
 export { router };
